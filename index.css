@@ -1,0 +1,49 @@
+:root {
+    /* Brancas */
+    --branco: #fafafa;
+
+    --borda: #c5c5cd;
+
+    /* Pretas */
+    --preto: #39373c;
+}
+
+body {
+    background: #e2ded3;
+    font-family: 'Playfair Display', serif;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: left;
+    cursor: pointer;
+}
+
+ul .branca {
+    height: 12em;
+    width: 2.5em;
+    z-index: 1;
+    border-left: 1px solid var(--borda);
+    border-bottom: 1px solid var(--borda);
+    background: var(--branco);
+    transition: 0.1s;
+}
+
+.branca:active {
+    box-shadow: inset -3px -26px 50px -11px #ADADAD;
+}
+
+.preto {
+    height: 7em;
+    width: 1.4em;
+    margin: 0 -11.5px 0 -11.5px;
+    z-index: 2;
+    background: var(--preto);
+}
+
+.preto:active {
+    box-shadow: inset -3px -26px 50px -11px black;
+}
